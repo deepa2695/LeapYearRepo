@@ -27,4 +27,9 @@ public LeapYear leapYear;
     public void isNonLeapYearTest(){
         Assert.assertFalse(leapYear.isLeapYear(2001));
     }
+	
+	@Test(expected = NullPointerException.class)
+    public void isLeapYearNullTest(){
+        Assert.assertNull(leapYear.isLeapYear(null));
+    }
 }
