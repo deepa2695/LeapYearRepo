@@ -22,4 +22,9 @@ public LeapYear leapYear;
     public void isLeapYearTest(){
         Assert.assertTrue(leapYear.isLeapYear(2000));
     }
+	
+	@Test
+    public void isNonLeapYearTest(){
+        Assert.assertFalse(leapYear.isLeapYear(2001));
+    }
 }
