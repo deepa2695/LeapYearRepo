@@ -5,9 +5,11 @@ import org.junit.Test;
 
 public class LeapYearTest {
 	
+	public LeapYear leapYear;
+	
 	@Test
     public void checkToGetOutput(){
-    	LeapYear leapYearImpl = new LeapYear();
-        Assert.assertTrue(leapYearImpl.isLeapYear(2000));
+    	leapYear = new LeapYear();
+        Assert.assertTrue(leapYear.isLeapYear(2000));
     }
 }
